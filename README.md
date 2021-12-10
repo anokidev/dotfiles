@@ -4,8 +4,6 @@
 ![Showcase](/images/showcase_2.png)
 ![Showcase](/images/showcase_3.png)
 
-Execute install.sh to get a similar result ( Manjaro Linux ) .
-
 This contains all the script file and config file that I use to configure the apps that I use for programming.
 
 NOTE : Taken from CPU - X and neofetch.
