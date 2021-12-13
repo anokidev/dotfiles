@@ -13,10 +13,6 @@ call plug#begin('~/.vim/plugged')
 
 "" Tools and stuff :
 
-
-" NERDTree file manager :- https://github.com/preservim/nerdtree - preservim .
-Plug 'preservim/nerdtree'
-
 " COC auto-completion :- https://github.com/neoclide/coc.nvim - neoclide.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -29,8 +25,15 @@ Plug 'ap/vim-css-color'
 " Autopairs :- https://github.com/jiangmiao/auto-pairs - jiangmiao.
 Plug 'jiangmiao/auto-pairs'
 
+"" Interface :
 
-"" Themes :
+" NERDTree file manager :- https://github.com/preservim/nerdtree - preservim .
+Plug 'preservim/nerdtree'
+
+" Powerlevel10k bar :- https://github.com/vim-airline/vim-airline - vim-airline .
+Plug 'vim-airline/vim-airline'
+
+" Themes :
 
 
 """ General :
@@ -60,8 +63,12 @@ Plug 'vim-airline/vim-airline-themes'
 
 """ Icons :
 
+
 " Icons for Vim and NVim :- https://github.com/ryanoasis/vim-devicons - ryanoasis.
 Plug 'ryanoasis/vim-devicons'
+
+" Icons for barbar.nvim
+Plug 'kyazdani42/nvim-web-devicons'
 
 
 "" Others :
@@ -185,6 +192,13 @@ set winblend=0
 set wildoptions=pum
 set pumblend=5
 
+
+" AUTOSTART :
+
+" Auto-start NERDTree.
+autocmd VimEnter * NERDTree
+
+
 " CUSTOM NEOVIM FUNCTIONS :
 
 "Goyo Settings - By Genzyy .
@@ -208,9 +222,6 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " NERDTree setup .
 
-" Auto-start NERDTree.
-
-autocmd VimEnter * NERDTree
 
 " Exit Vim if NERDTree is the only window left - By Genzyy .
 
@@ -221,14 +232,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 let g:NERDTreeDirArrowExpandable = '↓'
 let g:NERDTreeDirArrowCollapsible = '↑'
-
-"KeyBind for NERDTree - By Genzyy.
-
-"nnoremap <F4> :NERDTreeToggle<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-
-"KeyBind for TAGbar.
-nmap <F8> :TagbarToggle<CR>
 
 " COC Auto - Complete - By Genzyy.
 
@@ -251,8 +254,6 @@ let g:coc_global_extensions = [
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
-nnoremap <silent> K :call CocAction('doHover')<CR>
-
 
 "function! s:show_hover_doc()
 "  call timer_start(500, 'ShowDocIfNoDiagnostic')
@@ -261,6 +262,26 @@ nnoremap <silent> K :call CocAction('doHover')<CR>
 
 "autocmd CursorHoldI * :call <SID>show_hover_doc()
 "autocmd CursorHold * :call <SID>show_hover_doc()
+
+
+" KEYMAPS :
+
+
+" NERDTree :
+"
+" KeyBind for my personal shorcut.
+
+nnoremap <F2> :tabprevious<CR>
+nnoremap <F3> :tabnext<CR> 
+
+"KeyBind for NERDTree - By Genzyy.
+
+"nnoremap <F4> :NERDTreeToggle<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
+
+" COC :
+
+nnoremap <silent> K :call CocAction('doHover')<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
