@@ -6,4 +6,4 @@ Note that my settings.json is dependant at a lot of plugins, such as GlassIt-VSC
 
 I installed so many plugins that I couldn't even count them.
 
-![Plugins](https://www.github.com/anokidev/setup/images/vs-code/plugins.png)
+![Plugins](.../images/vs-code/plugins.png)
