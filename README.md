@@ -1,8 +1,9 @@
 # My Setup :
 
-![Showcase](/images/showcase_1.png)
-![Showcase](/images/showcase_2.png)
-![Showcase](/images/showcase_3.png)
+![Showcase_1](/images/showcase_1.png)
+![Showcase_2](/images/showcase_2.png)
+![Showcase_3](/images/showcase_3.png)
+![Showcase_4](/images/showcase_4.png)
 
 This contains all the script file and config file that I use to configure the apps that I use for programming.
 
@@ -72,9 +73,9 @@ NOTE : Taken from CPU - X and neofetch.
 
 #### Editor :
 
-- Editor : NeoVim + NERDTree + Airline | Gedit . 
-- Themes : OneHalfDark + vim-devicons 
-- Auto - Completion : COC + VIm-Javascript + vim-css-color + auto-pairs.
+- Editor : Visual Studio Code + Ariake Dark | NeoVim + NERDTree + Airline Powerlevel10k | Default Gedit . 
+- Themes : VS - Code : Ariake Dark + Material Icon Theme | NeoVim : OneHalfDark + vim-devicons 
+- Auto - Completion : VS - Code : Intellisense | NeoVim : COC + VIm-Javascript + vim-css-color + auto-pairs.
 - Other : LimeLight + Goyo + vim-polygot
 
 #### Tools :
