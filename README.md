@@ -1,10 +1,10 @@
 # My Setup :
 
-![Showcase_1](/images/showcase_1.png)
-![Showcase_2](/images/showcase_2.png)
-![Showcase_3](/images/showcase_3.png)
-![Showcase_4](/images/showcase_4.png)
-![Showcase_5](/images/showcase_5.png)
+![Showcase_1](images/showcase/showcase_1.png)
+![Showcase_2](images/showcase/showcase_2.png)
+![Showcase_3](images/showcase/showcase_3.png)
+![Showcase_4](images/showcase/showcase_4.png)
+![Showcase_5](images/showcase/showcase_5.png)
 
 This contains all the script file and config file that I use to configure the apps that I use for programming.
 
