@@ -73,9 +73,9 @@ NOTE : Taken from CPU - X and neofetch.
 
 #### Editor :
 
-- Editor : Visual Studio Code + Ariake Dark | NeoVim + NERDTree + Airline Powerlevel10k | Default Gedit . 
-- Themes : VS - Code : Ariake Dark + Material Icon Theme | NeoVim : OneHalfDark + vim-devicons 
-- Auto - Completion : VS - Code : Intellisense | NeoVim : COC + VIm-Javascript + vim-css-color + auto-pairs.
+- Editor : Visual Studio Code / VS-Code + Ariake Dark | NeoVim / NVim + NERDTree + Airline Powerlevel10k | Default Gedit . 
+- Themes : VS-Code : Ariake Dark + Material Icon Theme | NeoVim : OneHalfDark + vim-devicons 
+- Auto - Completion : VS-Code : Intellisense | NeoVim : COC + VIm-Javascript + vim-css-color + auto-pairs.
 - Other : LimeLight + Goyo + vim-polygot
 
 #### Tools :
@@ -94,9 +94,13 @@ NOTE : Taken from CPU - X and neofetch.
 
 #### Themes :
 
-- Matcha Dark Azul [GTK 2/3] .
-- Adwaita Maia Compact Dark ( WM Theme ) [GTK 2/3] .
+- System : Matcha Dark Azul [GTK 2/3] .
+- WM : Adwaita Maia Compact Dark [GTK 2/3] .
+- VS-Code : Ariake Dark.
+- NeoVim : OneHalfDark.
 
 #### Icons :
 
-- ePapirus Dark [GTK 2/3] .
+- System : ePapirus Dark [GTK 2/3] .
+- VS-Code : Material Icon Theme.
+- NeoVim : vim-devicons.
