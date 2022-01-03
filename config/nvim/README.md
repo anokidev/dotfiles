@@ -1,1 +1,1 @@
-Contains the config for NVIM.
+For NeoVim. I use COC, NERDTree, and Plug .

@@ -1,4 +1,10 @@
-# My Setup :
+<div style="display : flex ; justify-content : center" align="center">
+
+# My Setup
+
+</div>
+
+<div style="display : flex ; justify-content : center" align="center">
 
 ![Showcase_1](images/showcase/showcase_1.png)
 ![Showcase_2](images/showcase/showcase_2.png)
@@ -6,10 +12,15 @@
 ![Showcase_4](images/showcase/showcase_4.png)
 ![Showcase_5](images/showcase/showcase_5.png)
 
+</div>
+
+---------------------------------------
+
 This contains all the script file and config file that I use to configure the apps that I use for programming.
 
 NOTE : Taken from CPU - X and neofetch.
 
+---------------------------------------
 ## Hardware
 
 - Processor : AMD A5-5400K APU + Radeon HD Graphics.
@@ -23,10 +34,12 @@ NOTE : Taken from CPU - X and neofetch.
 - Keyboard : Genius USB Keyboard Model GK-150002 .
 - Mouse : Midasforce USB Furious X7 USB Mouse .
 
-## Software :
+## Software 
 
+A collection of softwares I use :
+
+---------------------------------------
 ### Essential :
-
 #### Initial Setup :
 
 - OS : Microsoft Windows 7 Ultimate Service Pack 1 | Manjaro Linux , based on Arch Linux and GNU/Linux.
@@ -38,8 +51,8 @@ NOTE : Taken from CPU - X and neofetch.
 - Audio : Windows - RealTek Audio Driver | Manjaro - Automatic .
 - Video : AMD Radeon Open Graphics Driver.
 
+---------------------------------------
 ### Daily uses :
-
 #### Basic :
 
 - File Manager : Nautilus.
@@ -64,6 +77,7 @@ NOTE : Taken from CPU - X and neofetch.
 - Recorder : OBS Studio.
 - Video Editor : Shotcut.
 
+---------------------------------------
 ### Programming :
 
 #### Terminal :
@@ -86,7 +100,8 @@ NOTE : Taken from CPU - X and neofetch.
 - Python : CPython Interpreter | PIP .
 - Javascript : Node.js | NPM .
 
-### Others :
+---------------------------------------
+### Others 
 
 #### Fonts :
 
@@ -105,3 +120,7 @@ NOTE : Taken from CPU - X and neofetch.
 - System : ePapirus Dark [GTK 2/3] .
 - VS-Code : Material Icon Theme.
 - NeoVim : vim-devicons.
+
+---------------------------------------
+
+That's it !
