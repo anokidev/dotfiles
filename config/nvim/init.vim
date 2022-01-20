@@ -33,6 +33,8 @@ Plug 'preservim/nerdtree'
 " Powerlevel10k bar :- https://github.com/vim-airline/vim-airline - vim-airline .
 Plug 'vim-airline/vim-airline'
 
+Plug 'akinsho/toggleterm.nvim'
+
 " Themes :
 
 
