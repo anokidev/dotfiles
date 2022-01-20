@@ -6,11 +6,8 @@
 
 <div style="display : flex ; justify-content : center" align="center">
 
-![Showcase_1](images/showcase/showcase_1.png)
-![Showcase_2](images/showcase/showcase_2.png)
-![Showcase_3](images/showcase/showcase_3.png)
-![Showcase_4](images/showcase/showcase_4.png)
-![Showcase_5](images/showcase/showcase_5.png)
+![Showcase](/showcase.png)
+
 
 </div>
 
