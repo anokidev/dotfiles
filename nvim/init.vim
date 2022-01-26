@@ -13,27 +13,16 @@ call plug#begin('~/.vim/plugged')
 
 "" Tools and stuff :
 
-" Javascript syntax hightlight :- https://github.com/pangloss/vim-javascript - pangloss. 
 Plug 'pangloss/vim-javascript'
-
-" CSS auto-color showcase :- https://github.com/ap/vim-css-color - ap .
 Plug 'ap/vim-css-color'
-
-" Autopairs :- https://github.com/jiangmiao/auto-pairs - jiangmiao.
 Plug 'jiangmiao/auto-pairs'
-
-" Tab bar :- https://github.com/romgrk/barbar.nvim - romgrk
 Plug 'romgrk/barbar.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "" Interface :
 
-" NERDTree file manager :- https://github.com/preservim/nerdtree - preservim .
 Plug 'preservim/nerdtree'
-
-" Powerlevel10k bar :- https://github.com/vim-airline/vim-airline - vim-airline .
 Plug 'vim-airline/vim-airline'
-
-" ToggleTerm :- https://github.com/akinsho/toggleterm.vim - toggleterm
 Plug 'akinsho/toggleterm.nvim'
 
 " Themes :
@@ -41,49 +30,29 @@ Plug 'akinsho/toggleterm.nvim'
 
 """ General :
 
-" Atom one like theme :- https://github.com/sonph/onehalf - sonph.
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-
-" Google material like theme :- https://github.com/NLKNguyen/papercolor-theme - NLKNguyen.
 Plug 'NLKNguyen/papercolor-theme'
-
-" Classic jazzy like theme :- https://github.com/morhetz/gruvbox - morhetz.
 Plug 'morhetz/gruvbox'
-
-" Purple dark theme :- https://github.com/dracula/vim - dracula .
 Plug 'dracula/vim'
 
 
 """ Bottom bar :
 
 
-" Colorscheme for bottom bar :- https://github.com/vim-airline/vim-airline - vim-airline .
 Plug 'vim-airline/vim-airline'
-
-" Auto-sync colorscheme to the bottom bar :- https://github.com/vim-airline/vim-airline-themes - vim-airline.
 Plug 'vim-airline/vim-airline-themes'
 
 
 """ Icons :
 
-
-" Icons for Vim and NVim :- https://github.com/ryanoasis/vim-devicons - ryanoasis.
 Plug 'ryanoasis/vim-devicons'
-
-" Icons for barbar.nvim
 Plug 'kyazdani42/nvim-web-devicons'
 
 
 "" Others :
 
-
-" Limelight :- https://github.com/junegunn/limelight.vim - junegunn.
 Plug 'junegunn/limelight.vim'
-
-" Goyo :- https://github.com/junegunn/goyo.vim - junegunn.
 Plug 'junegunn/goyo.vim'
-
-" Language packs :- https://github.com/sheerun/vim-polyglot - sheerun.
 Plug 'sheerun/vim-polyglot'
 
 
@@ -224,6 +193,8 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 " NERDTree setup .
 
+
+let NERDTreeShowHidden=1
 
 " Exit Vim if NERDTree is the only window left - By Genzyy .
 
