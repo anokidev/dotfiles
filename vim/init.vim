@@ -22,6 +22,8 @@ Plug 'jiangmiao/auto-pairs'
 
 Plug 'arcticicestudio/nord-vim'
 
+Plug 'akinsho/toggleterm.nvim'
+
 call plug#end()
 
 

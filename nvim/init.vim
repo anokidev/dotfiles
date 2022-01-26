@@ -1,4 +1,4 @@
-a" ORIGINAL SCRIPT FROM : https://github.com/genzyy/suckless-builds/blob/dotfiles/config/nvim/init.vim - genzyy  .
+" ORIGINAL SCRIPT FROM : https://github.com/genzyy/suckless-builds/blob/dotfiles/config/nvim/init.vim - genzyy  .
 
 
 " BEGIN :
@@ -22,6 +22,9 @@ Plug 'ap/vim-css-color'
 " Autopairs :- https://github.com/jiangmiao/auto-pairs - jiangmiao.
 Plug 'jiangmiao/auto-pairs'
 
+" Tab bar :- https://github.com/romgrk/barbar.nvim - romgrk
+Plug 'romgrk/barbar.nvim'
+
 "" Interface :
 
 " NERDTree file manager :- https://github.com/preservim/nerdtree - preservim .
@@ -29,6 +32,9 @@ Plug 'preservim/nerdtree'
 
 " Powerlevel10k bar :- https://github.com/vim-airline/vim-airline - vim-airline .
 Plug 'vim-airline/vim-airline'
+
+" ToggleTerm :- https://github.com/akinsho/toggleterm.vim - toggleterm
+Plug 'akinsho/toggleterm.nvim'
 
 " Themes :
 
@@ -89,8 +95,8 @@ call plug#end()
 " Auto yank and paste to the system clipboard.
 set clipboard=unnamedplus
 
-" No auto cmd .
-autocmd!
+" Autosave !
+autocmd TextChanged,TextChangedI <buffer> silent write
 
 " If people want to test my file, 
 " they can use this file without 
@@ -259,7 +265,6 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 "autocmd CursorHoldI * :call <SID>show_hover_doc()
 "autocmd CursorHold * :call <SID>show_hover_doc()
 
-
 " KEYMAPS :
 
 " Set a key-mapping for copy and pasting to the system clipboard
@@ -298,3 +303,4 @@ nmap <leader>rn <Plug>(coc-rename)
 
 
 " END.
+
