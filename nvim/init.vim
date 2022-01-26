@@ -1,4 +1,4 @@
-" ORIGINAL SCRIPT FROM : https://github.com/genzyy/suckless-builds/blob/dotfiles/config/nvim/init.vim - genzyy  .
+a" ORIGINAL SCRIPT FROM : https://github.com/genzyy/suckless-builds/blob/dotfiles/config/nvim/init.vim - genzyy  .
 
 
 " BEGIN :
