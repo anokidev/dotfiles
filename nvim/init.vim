@@ -13,9 +13,6 @@ call plug#begin('~/.vim/plugged')
 
 "" Tools and stuff :
 
-" COC auto-completion :- https://github.com/neoclide/coc.nvim - neoclide.
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Javascript syntax hightlight :- https://github.com/pangloss/vim-javascript - pangloss. 
 Plug 'pangloss/vim-javascript'
 
@@ -32,8 +29,6 @@ Plug 'preservim/nerdtree'
 
 " Powerlevel10k bar :- https://github.com/vim-airline/vim-airline - vim-airline .
 Plug 'vim-airline/vim-airline'
-
-Plug 'akinsho/toggleterm.nvim'
 
 " Themes :
 
@@ -91,6 +86,8 @@ call plug#end()
 
 " CONFIGS :
 
+" Auto yank and paste to the system clipboard.
+set clipboard=unnamedplus
 
 " No auto cmd .
 autocmd!
@@ -190,9 +187,6 @@ set cursorline
 
 " Enable GUI colors.
 set termguicolors
-set winblend=0
-set wildoptions=pum
-set pumblend=5
 
 
 " AUTOSTART :
@@ -268,6 +262,9 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
 " KEYMAPS :
 
+" Set a key-mapping for copy and pasting to the system clipboard
+:vnoremap <Leader>y "+y
+:nnoremap <Leader>p "+p
 
 " NERDTree :
 "
