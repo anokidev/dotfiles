@@ -33,7 +33,7 @@ This contains all the script file and config file that I use to configure the ap
 
 - OS : Manjaro Linux , based on Arch Linux and GNU/Linux | Microsoft Windows 7 Ultimate Service Pack 1
 - Shell : Windows - Batch | Manjaro : ZSH and Bash .
-- GUI : X11 + i3 + Polybar .
+- GUI : X11 + i3-gaps + Polybar .
 
 #### Terminal :
 
@@ -46,7 +46,7 @@ This contains all the script file and config file that I use to configure the ap
 - Editor : NeoVim / NVim + Neovim-Qt + NERDTree + Airline Powerlevel10k | Mousepad. 
 - Themes : NeoVim - OneHalfDark + vim-devicons | Mousepad - Oblivion .
 - Extensions Manager : Neovim - vim-plug
-- Auto - Completion - NeoVim : COC + Vim-Javascript + vim-css-color + auto-pairs .
+- Auto - Completion : NeoVim - COC + Vim-Javascript + vim-css-color + auto-pairs .
 - Other : Neovim - LimeLight + Goyo + vim-polygot 
 
 #### Tools :
