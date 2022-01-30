@@ -6,6 +6,7 @@
 
 <div style="display : flex ; justify-content : center" align="center">
 
+![Apps](/apps.png)
 ![Showcase](/showcase.png)
 
 
@@ -30,23 +31,23 @@ This contains all the script file and config file that I use to configure the ap
 
 #### Setup :
 
-- OS : Microsoft Windows 7 Ultimate Service Pack 1 | Manjaro Linux , based on Arch Linux and GNU/Linux.
+- OS : Manjaro Linux , based on Arch Linux and GNU/Linux | Microsoft Windows 7 Ultimate Service Pack 1
 - Shell : Windows - Batch | Manjaro : ZSH and Bash .
-- GUI : X11 / Wayland + XFCE-4 + xfce4wm + Whiskey Menu .
+- GUI : X11 + i3 + Polybar .
 
 #### Terminal :
 
-- Terminal : XFCE-4 terminal.
-- Bash Theme : Default.
+- Terminal : Alacritty .
+- Bash Theme : Manjaro Bash Theme .
 - ZSH Theme : Oh-My-Zsh + Powerlevel10k + MesloLGS NF Regular Powerline Font .
 
 #### Editor :
 
 - Editor : NeoVim / NVim + Neovim-Qt + NERDTree + Airline Powerlevel10k | Mousepad. 
-- Themes : NeoVim : OneHalfDark + vim-devicons | Mousepad : Oblivion .
-- Extensions Manager : Neovim : vim-plug
-- Auto - Completion : NeoVim : COC + Vim-Javascript + vim-css-color + auto-pairs .
-- Other : Neovim : LimeLight + Goyo + vim-polygot 
+- Themes : NeoVim - OneHalfDark + vim-devicons | Mousepad - Oblivion .
+- Extensions Manager : Neovim - vim-plug
+- Auto - Completion - NeoVim : COC + Vim-Javascript + vim-css-color + auto-pairs .
+- Other : Neovim - LimeLight + Goyo + vim-polygot 
 
 #### Tools :
 

@@ -98,12 +98,9 @@ alias more=less
 
 # Custom commands for utillities.
 
-alias dev='cd /home/ratpipe/a/1dev'
 alias about='bash /home/ratpipe/a/4scripts/about/about_bash.sh'
 
 # Custom commands for my games.
-
-alias minecraft='java -jar /home/ratpipe/a/3games/Minecraft/tlauncher.jar'
 
 xhost +local:root > /dev/null 2>&1
 

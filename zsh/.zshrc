@@ -18,15 +18,7 @@ fi
 
 # This is my custom commands.
 
-alias dev='cd /home/ratpipe/a/1dev'
-
-# This is for my games.
-
-alias tlauncher='java -jar /home/ratpipe/a/3games/Minecraft/tlauncher.jar'
-
 alias about='zsh /home/ratpipe/a/4scripts/about/about_zsh.sh'
-
-alias deplace='cd /home/ratpipe/a/1dev/javascript/active/deplace'
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 

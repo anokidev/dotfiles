@@ -5,4 +5,4 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 
-export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORM=xcb
