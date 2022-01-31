@@ -51,7 +51,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = filesystem xbacklight pulseaudio-control xkeyboard eth cpu memory temperature date powermenu
+modules-right = filesystem xbacklight pulseaudio-control xkeyboard wlan eth cpu memory temperature date powermenu
 
 tray-position = none
 tray-padding = 2
@@ -158,16 +158,22 @@ label-mounted = %{F#c203fc}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
+format-prefix = " "
 format-underline = #c203fc
+
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+host = 127.0.0.1
+port = 8000
+password = anokiyft2049
+
+icon-next = ↪
+icon-stop = ⏹
+icon-play = ▶
+icon-pause = ⏸
+icon-prev = ↩ 
 
 label-song-maxlen = 25
 label-song-ellipsis = true
@@ -181,6 +187,8 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #d98a0b
+
+label-warn-foreground = #ff0000
 label = %percentage:2%%
 
 [module/memory]
@@ -189,6 +197,8 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
+
+label-warn-foreground = #ff0000
 label = %percentage_used%%
 
 [module/temperature]
@@ -205,7 +215,7 @@ format = <ramp> <label>
 format-foreground = ${colors.foreground}
 format-underline = #c72581
 format-warn = <ramp> <label-warn>
-format-warn-underline = #c7254f
+
 label = %temperature-c%
 label-warn =  %temperature-c%
 label-warn-foreground = #c7254f
@@ -227,6 +237,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
+
 label-connected = %essid%
 
 format-disconnected =
@@ -250,7 +261,9 @@ interval = 3.0
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
+
 label-connected = %local_ip%
+label-warn-foreground = #ff0000
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
