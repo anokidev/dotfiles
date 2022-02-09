@@ -25,6 +25,8 @@ Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'akinsho/toggleterm.nvim'
 
+
+
 " Themes :
 
 
@@ -57,7 +59,6 @@ Plug 'sheerun/vim-polyglot'
 
 
 call plug#end()
-
 
 " CONFIGS :
 

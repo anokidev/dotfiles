@@ -75,20 +75,26 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+z exec xfce4-appfinder
 
 # Start Google Chrome.
-bindsym $mod+x exec google-chrome-stable
+bindsym $mod+x exec firefox
 
 # Start Thunar.
 bindsym $mod+c exec thunar
 
+# Start lxappearance.
+bindsym $mod+n exec lxappearance
+
+# Start XFCE4 Settings Manager
+bindsym $mod+m exec xfce4-settings-manager
+
 # Start XFCE4 Screenshoot tool.
-bindsym $mod+n exec xfce4-screenshooter
+bindsym $mod+b exec xfce4-screenshooter
 
 
 ## WINDOW KEYBINDINGS:
 
 
 # Kill focused window.
-bindsym $mod+Shift+q kill
+bindsym --whole-window $mod+Shift+q kill
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
