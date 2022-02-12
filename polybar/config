@@ -30,31 +30,24 @@ alert = #bd2c40
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 30
-;offset-x = 1%
-;offset-y = 1%
-radius = 
+height = 25
+radius = 0 
 line-color = #2a51bd
 line-size = 2
 
 border-color = #117cd9
 
-padding-left = 0
-padding-right = 0
 
-module-margin-left = 2
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-0 = MesloLGS NF:style=Regular:size=10;2
+font-1 = MesloLGS NF:size=8:antialias=false;0
+font-2 = MesloLGS NF:pixelsize=10
 
 modules-left = bspwm i3
 modules-center = mpd
-modules-right = filesystem xbacklight pulseaudio-control xkeyboard wlan eth cpu memory temperature date powermenu
+modules-right = filesystem xbacklight pulseaudio-control xkeyboard eth wlan cpu memory temperature date powermenu
 
 tray-position = none
-tray-padding = 2
+tray-padding = 40
 ;tray-background = #0063ff
 
 wm-restack = i3
@@ -72,13 +65,13 @@ top = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-
+module-padding = 40
 
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
+padding-left = 8
 
 
 
@@ -94,19 +87,19 @@ wrapping-scroll = false
 
 
 
-label-mode-padding = 2
+label-mode-padding = 1
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
+label-focused-foreground = #000
+label-focused-background = #fff
+label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
-label-unfocused-padding = 2
+label-unfocused-padding = 1
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
@@ -117,10 +110,10 @@ label-visible-padding = ${self.label-focused-padding}
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
 label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 ; Separator in between workspaces
-; label-separator = |
+;label-separator = |
 
 
 
@@ -133,17 +126,14 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+format-background = #420202
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-
 label-indicator-padding = 2
 label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
+label-padding = 1
 
 
 
@@ -154,18 +144,20 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#c203fc}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
+label-mounted = " %{F#c203fc}%mountpoint%%{F-}: %percentage_used%% "
+label-unmounted = %mountpoint% is not mounted.
 
 format-prefix = " "
-format-underline = #c203fc
+format-mounted-background = #360042
+format-unmounted-foreground = ${colors.foreground-alt}
+
+label-padding = 1
 
 [module/mpd]
 type = internal/mpd
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
-host = 127.0.0.1
+host = 0.0.0.0
 port = 8000
 password = anokiyft2049
 
@@ -178,28 +170,37 @@ icon-prev = ↩ 
 label-song-maxlen = 25
 label-song-ellipsis = true
 
+label-padding = 1
+
 
 
 
 [module/cpu]
 type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #d98a0b
+interval = 1
 
-label-warn-foreground = #ff0000
-label = %percentage:2%%
+format-prefix = " "
+format-foreground = #ffffff
+
+format-background = #6e5407
+format-warn-background = #ff0000
+
+label-padding = 1
+
+label = "CPU : %percentage:2%%"
 
 [module/memory]
 type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+interval = 1
 
-label-warn-foreground = #ff0000
-label = %percentage_used%%
+format-prefix = " "
+format-foreground = #ffffff
+
+format-background = #0a4b7a
+format-warn-foreground = #ff0000
+
+label-padding = 1
+label = "RAM : %percentage_used%%"
 
 [module/temperature]
 ;https://github.com/jaagr/polybar/wiki/Module:-temperature
@@ -213,22 +214,44 @@ warn-temperature = 60
 
 format = <ramp> <label>
 format-foreground = ${colors.foreground}
-format-underline = #c72581
-format-warn = <ramp> <label-warn>
+format-background = #c72581
+format-prefix = " "
 
 label = %temperature-c%
 label-warn =  %temperature-c%
-label-warn-foreground = #c7254f
+format-warn-foreground = #c7254f
+label-padding = 1
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
+ramp-0 = " "
+ramp-1 = " "
+ramp-2 = " "
+ramp-3 = " "
+ramp-4 = " "
 ramp-foreground =${colors.foreground}
 
 
 
+
+[module/eth]
+type = internal/network
+interface = enp4s0
+interval = 3.0
+
+format = <label>
+format-connected-background = #55aa55
+format-connected-prefix = " "
+format-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+format-disconnected-background = #ff0000
+format-padding = 2
+
+label-connected = "Connected! "
+label-disconnected = "Disconnected!"
+
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/wlan]
 type = internal/network
@@ -238,9 +261,9 @@ interval = 3.0
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
 
+label-padding = 1
 label-connected = %essid%
 
-format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -252,24 +275,6 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
-
-[module/eth]
-type = internal/network
-interface = enp4s0
-interval = 3.0
-
-format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-
-label-connected = %local_ip%
-label-warn-foreground = #ff0000
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 
 
@@ -332,8 +337,8 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-underline = #0b1cd9
-label-padding = 2
+format-background = #0b1cd9
+label-padding = 1
 label-foreground = ${colors.foreground}
 
 # Icons mixed from Font Awesome 5 and Material Icons
@@ -388,29 +393,30 @@ type = custom/menu
 
 expand-right = true
 
-format-spacing = 1
-format-underline = #ffffff
+format-background = #302f2c
 
-label-open = Power
+label-open = " ⏻ Power "
 label-open-foreground = #ffffff
-label-close =  cancel
+label-close = " cancel "
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
-menu-0-0 = Shutdown
+label-padding = 1
+
+menu-0-0 = " Shutdown "
 menu-0-0-exec = menu-open-2
-menu-0-1 = Reboot
+menu-0-1 = " Reboot "
 menu-0-1-exec = menu-open-1
 
-menu-1-0 = Yes
+menu-1-0 = "Yes"
 menu-1-0-exec = reboot
-menu-1-1 = No
+menu-1-1 = "No"
 menu-1-1-exec = menu-open-0
 
-menu-2-0 = Yes 
+menu-2-0 = "Yes" 
 menu-2-0-exec = poweroff
-menu-2-1 = No
+menu-2-1 = "No"
 menu-2-1-exec = menu-open-0
 
 
@@ -445,16 +451,17 @@ card = intel_backlight
 type = internal/date
 interval = 5
 
-date = " %d-%m-%Y"
+date = "%d-%m-%Y"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #824f0c
+format-background = #824f0c
 
-label = %date% %time%
+label = "%date% %time%"
+label-padding = 1
 
 
 

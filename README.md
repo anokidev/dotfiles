@@ -14,6 +14,17 @@
 
 ---------------------------------------
 
+## NOTES :
+
+Note that i3-gaps config is written to interact with Polybar.
+Note only that MesloLGS NF font is required.
+.bashrc and .zshrc custom command needs shell script files.
+The good thing is that I already provide the shell script files.
+
+---------------------------------------
+
+## SPECS :
+
 This contains all the script file and config file that I use to configure the apps that I use for programming.
 
 **NOTE** : Taken from CPU - X and neofetch.
