@@ -182,7 +182,7 @@ interval = 1
 format-prefix = " "
 format-foreground = #ffffff
 
-format-background = #6e5407
+format-background = #6a7801
 format-warn-background = #ff0000
 
 label-padding = 1
