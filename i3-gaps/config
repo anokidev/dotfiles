@@ -71,10 +71,10 @@ for_window [class="^.*"] border pixel 0
 # start Alacritty.
 bindsym $mod+Return exec alacritty
 
-# Start XFCE4 AppFinder.
-bindsym $mod+z exec xfce4-appfinder
+# Start dmenu.
+bindsym $mod+z exec dmenu_run -b -i -p Search: -nb '#000000' -nf '#1388d1' -sb '#1388d1' -sf '#000000'
 
-# Start Google Chrome.
+# Start firefox.
 bindsym $mod+x exec firefox
 
 # Start Thunar.
