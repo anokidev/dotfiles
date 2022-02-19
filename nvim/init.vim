@@ -14,10 +14,15 @@ call plug#begin('~/.vim/plugged')
 "" Tools and stuff :
 
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
 Plug 'ap/vim-css-color'
 Plug 'jiangmiao/auto-pairs'
 Plug 'romgrk/barbar.nvim'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 "" Interface :
 
@@ -36,6 +41,8 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
+Plug 'tomasr/molokai'
+Plug 'arcticicestudio/nord-vim'
 
 
 """ Bottom bar :
@@ -72,6 +79,8 @@ autocmd TextChanged,TextChangedI <buffer> silent write
 " they can use this file without 
 " having to worry about incompabillity.
 set nocompatible
+
+set shiftwidth=4
 
 " Enable numbers.
 set number
