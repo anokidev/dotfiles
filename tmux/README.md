@@ -1,3 +1,4 @@
 # Tmux
 
-For tmux. Located in ~/.tmux folder.
+I use TPM to install plugins.
+For theme, nord, again !
