@@ -7,11 +7,12 @@ Keep in mind that my i3-gaps config needs :
 
 - Polybar for i3 status bar.
 - Alacritty for terminal emulator.
-- Mozilla Firefox for web browser.
+- Google Chrome Stable for web browser.
 - Thunar for file manager.
 - XFCE4 App Finder for program finder.
 - XFCE4 Screenshooter for screenshoot tool.
 - XFCE4 Settings Manager for settings app.
+- feh for wallpaper changer.
 
 Download the file named config, and then put in inside ~/.config/i3 . Not ~/.config/i3-gaps .
 

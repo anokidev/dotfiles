@@ -88,13 +88,13 @@ wrapping-scroll = false
 
 
 label-mode-padding = 1
-label-mode-foreground = #000
+label-mode-foreground = #fff
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-foreground = #000
-label-focused-background = #fff
+label-focused-foreground = #fff
+label-focused-background = #0e7dc2
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
@@ -128,7 +128,7 @@ blacklist-0 = num lock
 
 format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
-format-background = #420202
+format-background = #074369
 
 label-layout = %layout%
 label-indicator-padding = 2
@@ -144,11 +144,11 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = " %{F#c203fc}%mountpoint%%{F-}: %percentage_used%% "
+label-mounted = " %{F#fff}%mountpoint%%{F-}: %percentage_used%% "
 label-unmounted = %mountpoint% is not mounted.
 
 format-prefix = " "
-format-mounted-background = #360042
+format-mounted-background = #095280
 format-unmounted-foreground = ${colors.foreground-alt}
 
 label-padding = 1
@@ -182,7 +182,7 @@ interval = 1
 format-prefix = " "
 format-foreground = #ffffff
 
-format-background = #6a7801
+format-background = #063959
 format-warn-background = #ff0000
 
 label-padding = 1
@@ -196,7 +196,7 @@ interval = 1
 format-prefix = " "
 format-foreground = #ffffff
 
-format-background = #0a4b7a
+format-background = #05304a
 format-warn-foreground = #ff0000
 
 label-padding = 1
@@ -214,7 +214,7 @@ warn-temperature = 60
 
 format = <ramp> <label>
 format-foreground = ${colors.foreground}
-format-background = #c72581
+format-background = #052b42
 format-prefix = " "
 
 label = %temperature-c%
@@ -238,7 +238,7 @@ interface = enp4s0
 interval = 3.0
 
 format = <label>
-format-connected-background = #55aa55
+format-connected-background = #074063
 format-connected-prefix = " "
 format-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
@@ -337,7 +337,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-background = #0b1cd9
+format-background = #074b75
 label-padding = 1
 label-foreground = ${colors.foreground}
 
@@ -393,7 +393,7 @@ type = custom/menu
 
 expand-right = true
 
-format-background = #302f2c
+format-background = #021724
 
 label-open = " ⏻ Power "
 label-open-foreground = #ffffff
@@ -458,7 +458,7 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-background = #824f0c
+format-background = #041f30
 
 label = "%date% %time%"
 label-padding = 1

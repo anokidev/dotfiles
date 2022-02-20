@@ -22,6 +22,8 @@ Note only that MesloLGS NF font is required.
 The good thing is that I already provide the shell script files.
 oh-my-zsh is also installed, requires Powerlevel10k.
 
+For wallpaper, click [here](https://www.peakpx.com/en/hd-wallpaper-desktop-vpsqb).
+
 ---------------------------------------
 
 ## SPECS :
@@ -56,7 +58,7 @@ This contains all the script file and config file that I use to configure the ap
 #### Editor :
 
 - Editor : NeoVim / NVim + Neovim-Qt + NERDTree + Airline Powerlevel10k | Mousepad. 
-- Themes : NeoVim - OneHalfDark + vim-devicons | Mousepad - Oblivion .
+- Themes : NeoVim - Nord + vim-devicons | Mousepad - Oblivion .
 - Extensions Manager : Neovim - vim-plug
 - Auto - Completion : NeoVim - COC + Vim-Javascript + vim-css-color + auto-pairs .
 - Other : Neovim - LimeLight + Goyo + vim-polygot 
@@ -79,12 +81,11 @@ This contains all the script file and config file that I use to configure the ap
 
 - System : Matcha Dark Azul [GTK 2/3] .
 - WM : Matcha Dark Azul [GTK 2/3] .
-- NeoVim : OneHalfDark.
+- NeoVim : Nord.
 
 #### Icons :
 
 - System : ePapirus Dark [GTK 2/3] .
-- VS-Code : Material Icon Theme.
 - NeoVim : vim-devicons.
 
 ---------------------------------------

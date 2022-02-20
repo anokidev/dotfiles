@@ -75,7 +75,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+z exec dmenu_run -b -i -p Search: -nb '#000000' -nf '#1388d1' -sb '#1388d1' -sf '#000000'
 
 # Start firefox.
-bindsym $mod+x exec firefox
+bindsym $mod+x exec google-chrome-stable
 
 # Start Thunar.
 bindsym $mod+c exec thunar
@@ -230,6 +230,15 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+
+
+
+# APPS SPECIFIC KEYBINDINGS :
+
+for_window [class="zoom"] floating enable
+
+
 
 
 # DEBUGGING KEYBINDINGS :
