@@ -1,3 +1,8 @@
+# anokidev's dotfiles : bash .
+
+
+
+
 #
 # ~/.bashrc
 #
@@ -93,14 +98,13 @@ unset use_color safe_term match_lhs sh
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
+alias np='nvim -w PKGBUILD'
 alias more=less
 
 # Custom commands for utillities.
 
 alias about='bash /home/ratpipe/a/4scripts/about/about_bash.sh'
-
-# Custom commands for my games.
+alias vbox='virtualbox -style Fusion %U'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -142,4 +146,4 @@ ex ()
   fi
 }
 
-export EDITOR='nvim'
+export QT_QPA_PLATFORMTHEME=qt5ct
