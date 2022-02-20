@@ -15,6 +15,8 @@
 
 ---------------------------------------
 
+This is my setup, most of them are FOSS softwares.
+
 ## NOTES :
 
 Note that i3-gaps config is written to interact with Polybar.
