@@ -6,8 +6,9 @@
 
 <div style="display : flex ; justify-content : center" align="center">
 
-![Apps](/apps.png)
-![Showcase](/showcase.png)
+![Showcase-1](/showcase_1.png)
+![Showcase-2](/showcase_2.png)
+![Showcase-3](/showcase_3.png)
 
 
 </div>
