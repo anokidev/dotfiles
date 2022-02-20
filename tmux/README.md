@@ -1,3 +1,3 @@
 # Tmux
 
-For tmux.
+For tmux. Located in ~/.tmux folder.

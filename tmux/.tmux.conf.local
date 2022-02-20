@@ -1,3 +1,9 @@
+# anokidev's dotfiles : tmux.
+# ORIGINAL SOURCE CODE : https://github.com/gpakosz/.tmux .
+
+
+
+
 # : << EOF
 # https://github.com/gpakosz/.tmux
 # (‑●‑●)> dual licensed under the WTFPL v2 license and the MIT license,
@@ -5,17 +11,9 @@
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
 
-# -- navigation ----------------------------------------------------------------
-
-# if you're running tmux within iTerm2
-#   - and tmux is 1.9 or 1.9a
-#   - and iTerm2 is configured to let option key act as +Esc
-#   - and iTerm2 is configured to send [1;9A -> [1;9D for option + arrow keys
-# then uncomment the following line to make Meta + arrow keys mapping work
-#set -ga terminal-overrides "*:kUP3=\e[1;9A,*:kDN3=\e[1;9B,*:kRIT3=\e[1;9C,*:kLFT3=\e[1;9D"
 
 
-# -- windows & pane creation ---------------------------------------------------
+### WINDOWS AND PANE :  
 
 # new window retains current path, possible values are:
 #   - true
@@ -38,7 +36,9 @@ tmux_conf_new_pane_reconnect_ssh=false
 tmux_conf_new_session_prompt=false
 
 
-# -- display -------------------------------------------------------------------
+
+
+## DISPLAY :
 
 # RGB 24-bit colour support (tmux >= 2.2), possible values are:
 #  - true
@@ -49,7 +49,7 @@ tmux_conf_24b_colour=false
 tmux_conf_theme_colour_1="#080808"    # dark gray
 tmux_conf_theme_colour_2="#303030"    # gray
 tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-tmux_conf_theme_colour_4="#00afff"    # light blue
+tmux_conf_theme_colour_4="#3d34eb"    # light blue
 tmux_conf_theme_colour_5="#ffff00"    # yellow
 tmux_conf_theme_colour_6="#080808"    # dark gray
 tmux_conf_theme_colour_7="#e4e4e4"    # white
@@ -61,7 +61,7 @@ tmux_conf_theme_colour_12="#8a8a8a"   # light gray
 tmux_conf_theme_colour_13="#e4e4e4"   # white
 tmux_conf_theme_colour_14="#080808"   # dark gray
 tmux_conf_theme_colour_15="#080808"   # dark gray
-tmux_conf_theme_colour_16="#d70000"   # red
+tmux_conf_theme_colour_16="#3d34eb"   # red
 tmux_conf_theme_colour_17="#e4e4e4"   # white
 
 # default theme (ansi)
@@ -313,7 +313,9 @@ tmux_conf_theme_clock_colour="$tmux_conf_theme_colour_4"
 tmux_conf_theme_clock_style="24"
 
 
-# -- clipboard -----------------------------------------------------------------
+
+
+## CLIPBOARD : 
 
 # in copy mode, copying selection also copies to the OS clipboard
 #   - true
@@ -323,14 +325,17 @@ tmux_conf_theme_clock_style="24"
 tmux_conf_copy_to_os_clipboard=false
 
 
-# -- user customizations -------------------------------------------------------
+
+
+## USER CUSTOMIZATIONS :
+ 
 # this is the place to override or undo settings
 
 # increase history size
 #set -g history-limit 10000
 
 # start with mouse mode enabled
-#set -g mouse on
+set -g mouse on
 
 # force Vi mode
 #   really you should export VISUAL or EDITOR environment variable, see manual
@@ -348,7 +353,9 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g status-position top
 
 
-# -- tpm -----------------------------------------------------------------------
+
+
+## TPM OR SOMETHING IDK : 
 
 # while I don't use tpm myself, many people requested official support so here
 # is a seamless integration that automatically installs plugins in parallel
@@ -390,7 +397,9 @@ tmux_conf_uninstall_plugins_on_reload=true
 #set -g @continuum-restore 'on'
 
 
-# -- custom variables ----------------------------------------------------------
+
+
+## CUSTOM VARIABLE : 
 
 # to define a custom #{foo} variable, define a POSIX shell function between the
 # '# EOF' and the '# "$@"' lines. Please note that the opening brace { character

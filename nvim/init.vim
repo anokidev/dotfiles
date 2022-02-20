@@ -1,3 +1,8 @@
+" anokidev's dotfiles : NeoVim / nvim .
+
+
+
+
 " ORIGINAL SCRIPT FROM : https://github.com/genzyy/suckless-builds/blob/dotfiles/config/nvim/init.vim - genzyy  .
 
 
@@ -126,10 +131,10 @@ set scrolloff=10
 set shell=zsh
 
 " Colorscheme.
-colorscheme onehalfdark
+colorscheme nord
 
 " Airline theme.
-let g:airline_theme='onehalfdark'
+let g:airline_theme='nord'
 
 " Enable powerline and powerlevel10k for AirLine.
 let g:airline_powerline_fonts = 1

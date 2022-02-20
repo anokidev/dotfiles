@@ -23,6 +23,7 @@ The good thing is that I already provide the shell script files.
 oh-my-zsh is also installed, requires Powerlevel10k.
 
 For wallpaper, click [here](https://www.peakpx.com/en/hd-wallpaper-desktop-vpsqb).
+For music used for cava, click [here](https://www.youtube.com/watch?v=SKricIeeru0).
 
 ---------------------------------------
 
@@ -45,9 +46,9 @@ This contains all the script file and config file that I use to configure the ap
 
 #### Setup :
 
-- OS : Manjaro Linux , based on Arch Linux and GNU/Linux | Microsoft Windows 7 Ultimate Service Pack 1
-- Shell : Windows - Batch | Manjaro : ZSH and Bash .
-- GUI : X11 + i3-gaps + Polybar .
+- OS : Manjaro Linux| Microsoft Windows 7 Ultimate .
+- Shell : Windows - Batch | Manjaro : ZSH, Bash, and Powershell .
+- GUI : Windows Shell | X11 + i3-gaps + Polybar .
 
 #### Terminal :
 
