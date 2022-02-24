@@ -10,9 +10,13 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="spaceship"
 
+
+## PLUGINS :
+
 plugins=(
 		git
 		zsh-autosuggestions
+		zsh-syntax-highlighting
 )
 
 ## THEME SETTINGS :

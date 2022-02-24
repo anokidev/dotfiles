@@ -24,7 +24,9 @@ Note that i3-gaps config is written to interact with Polybar.
 Note only that MesloLGS NF font is required.
 .bashrc and .zshrc custom command needs shell script files.
 The good thing is that I already provide the shell script files.
-oh-my-zsh and Spaceship Prompt theme are required.
+
+oh-my-zsh, Spaceship Prompt theme, 
+zsh-syntax-highlighting, and zsh-auto-suggestions are required.
 
 For wallpaper, click [here](https://www.peakpx.com/en/hd-wallpaper-desktop-vpsqb).
 For music used for cava, click [here](https://www.youtube.com/watch?v=SKricIeeru0).
