@@ -22,7 +22,7 @@ This is my setup, most of them are FOSS softwares.
 
 Note that i3-gaps config is written to interact with Polybar.
 Note only that MesloLGS NF font is required.
-.bashrc and .zshrc custom command needs shell script files.
+.bashrc custom command needs shell script files.
 The good thing is that I already provide the shell script files.
 
 oh-my-zsh, Spaceship Prompt theme, 
