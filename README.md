@@ -6,10 +6,10 @@
 
 <div style="display : flex ; justify-content : center" align="center">
 
-![Showcase-1](/showcase/1.png)
-![Showcase-2](/showcase/2.png)
-![Showcase-3](/showcase/3.png)
-![Showcase-4](/showcase/4.png)
+![Showcase-1](/showcases/1.png)
+![Showcase-2](/showcases/2.png)
+![Showcase-3](/showcases/3.png)
+![Showcase-4](/showcases/4.png)
 
 
 </div>
@@ -24,7 +24,7 @@ Note that i3-gaps config is written to interact with Polybar.
 Note only that MesloLGS NF font is required.
 .bashrc and .zshrc custom command needs shell script files.
 The good thing is that I already provide the shell script files.
-oh-my-zsh is also installed, requires Powerlevel10k.
+oh-my-zsh and Spaceship Prompt theme are required.
 
 For wallpaper, click [here](https://www.peakpx.com/en/hd-wallpaper-desktop-vpsqb).
 For music used for cava, click [here](https://www.youtube.com/watch?v=SKricIeeru0).
@@ -54,28 +54,16 @@ This contains all the script file and config file that I use to configure the ap
 - Shell : Windows - Batch | Manjaro : ZSH, Bash, and Powershell .
 - GUI : Windows Shell | X11 + i3-gaps + Polybar .
 
-#### Terminal :
+#### Tools :
 
 - Terminal : Alacritty .
-- Bash Theme : Manjaro Bash Theme .
-- ZSH Theme : Oh-My-Zsh + Powerlevel10k + MesloLGS NF Regular Powerline Font .
+- Source control and repo manager : Git + GitHub.
 
 #### Editor :
 
-- Editor : NeoVim / NVim + Neovim-Qt + NERDTree + Airline Powerlevel10k | Mousepad. 
-- Themes : NeoVim - Nord + vim-devicons | Mousepad - Oblivion .
-- Extensions Manager : Neovim - vim-plug
-- Auto - Completion : NeoVim - COC + Vim-Javascript + vim-css-color + auto-pairs .
-- Other : Neovim - LimeLight + Goyo + vim-polygot 
-
-#### Tools :
-
-- Source control and repo manager : Git + GitHub.
-- Compiler : GNU Compiler Collection.
-
----------------------------------------
-
-### Others 
+- Editor : Neovim.
+- Extensions Manager : Neovim - vim-plug.
+- Auto - Completion : NeoVim - COC + auto-pairs .
 
 #### Fonts :
 
@@ -85,8 +73,10 @@ This contains all the script file and config file that I use to configure the ap
 #### Themes :
 
 - System : Matcha Dark Azul [GTK 2/3] .
-- WM : Matcha Dark Azul [GTK 2/3] .
-- NeoVim : Nord.
+- NeoVim : Nord .
+- Mousepad : Oblivion .
+- Bash : Default Manjaro .
+- ZSH : Spaceship Prompt .
 
 #### Icons :
 
