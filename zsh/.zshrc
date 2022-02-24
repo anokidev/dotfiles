@@ -109,4 +109,11 @@ SPACESHIP_PYENV_SYMBOL=""
 
 source $ZSH/oh-my-zsh.sh
 
+# Colorscript.
+colorscript -e six
+
+echo ""
+
+uname -a
+
 
