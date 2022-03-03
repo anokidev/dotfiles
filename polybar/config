@@ -191,7 +191,7 @@ format-warn-background = #ff0000
 
 label-padding = 1
 
-label = "CPU : %percentage:2%%"
+label = "CPU : %percentage-core1%% | %percentage-core2%%"
 
 [module/memory]
 type = internal/memory
