@@ -6,6 +6,8 @@ My config needs :
 - oh-my-zsh plugin : zsh-syntax-highlighting .
 - oh-my-zsh theme : Spaceship Prompt Theme .
 - colorscripts : From Distrotube .
+- neofetch : For system info.
+- lolcat : For rainbow effects.
 
 Keep in note that my custom command called "about" needs
 an executable script file called about_zsh.sh .

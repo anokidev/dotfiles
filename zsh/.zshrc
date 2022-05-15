@@ -61,13 +61,14 @@ SPACESHIP_HOST_COLOR="green"
 
 # DIR :
 SPACESHIP_DIR_PREFIX='| '
+SPACESHIP_DIR_SUFFIX=' | '
 
 # TIME :
 SPACESHIP_TIME_SHOW=true
 SPACESHIP_TIME_PREFIX="| "
 
 # GIT :
-SPACESHIP_GIT_PREFIX='| Git : '
+SPACESHIP_GIT_PREFIX='Git : '
 SPACESHIP_GIT_SUFFIX=" "
 SPACESHIP_GIT_BRANCH_SUFFIX=""
 SPACESHIP_GIT_STATUS_PREFIX=" "
@@ -110,10 +111,15 @@ SPACESHIP_PYENV_SYMBOL=""
 source $ZSH/oh-my-zsh.sh
 
 # Colorscript.
-colorscript -e six
+colorscript -e six | lolcat
 
 echo ""
 
-uname -a
+uname -a | lolcat
+
+echo ""
+
+neofetch | lolcat
+
 
 

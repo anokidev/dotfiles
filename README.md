@@ -53,8 +53,8 @@ This contains all the script file and config file that I use to configure the ap
 #### Setup :
 
 - OS : Manjaro Linux| Microsoft Windows 7 Ultimate .
-- Shell : Windows - Batch | Manjaro : ZSH, Bash, and Powershell .
-- GUI : Windows Shell | X11 + i3-gaps + Polybar .
+- Shell : Windows - Batch | Manjaro : ZSH and Bash.
+- GUI : Windows Shell | X11 + i3-gaps + Bumblebee Status .
 
 #### Tools :
 
@@ -63,19 +63,21 @@ This contains all the script file and config file that I use to configure the ap
 
 #### Editor :
 
-- Editor : Neovim.
-- Extensions Manager : Neovim - vim-plug.
-- Auto - Completion : NeoVim - COC + auto-pairs .
+- Editor : Emacs (Main) | Neovim (Simple Editing) | Nano (Emergency) .
+- Extensions Manager : Neovim - vim-plug | Emacs - Doom Emacs .
+- Auto - Completion : NeoVim - COC + auto-pairs | Emacs - A lot of plugins .
 
 #### Fonts :
 
-- MesloLGS NF Regular Powerline 10 ( Monospace Font ) .
-- Noto Sans Medium 10 ( Regular Font ) .
+- MesloLGS NF Regular Powerline 15 (Monospace Font) .
+- Noto Sans Medium 10 (Regular Font) .
+- Source Code Pro 10 (Status Bar Font) .
 
 #### Themes :
 
 - System : Matcha Dark Azul [GTK 2/3] .
 - NeoVim : Nord .
+- Emacs : Doom-One .
 - Mousepad : Oblivion .
 - Bash : Default Manjaro .
 - ZSH : Spaceship Prompt .
@@ -84,6 +86,7 @@ This contains all the script file and config file that I use to configure the ap
 
 - System : ePapirus Dark [GTK 2/3] .
 - NeoVim : vim-devicons.
+- Emacs : Doom Emacs default icons.
 
 ---------------------------------------
 

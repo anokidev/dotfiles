@@ -39,30 +39,27 @@ radius = 0
 line-color = #2a51bd
 line-size = 2
 
-border-color = #117cd9
+border-color = #251db5
 
+border-top = false
+border-left = false
+border-right = false
 
 font-0 = MesloLGS NF:style=Regular:size=10;2
 font-1 = MesloLGS NF:size=8:antialias=false;0
 font-2 = MesloLGS NF:pixelsize=10
 
 modules-left = bspwm i3
-modules-center = mpd
-modules-right = filesystem xbacklight pulseaudio-control xkeyboard eth wlan cpu memory temperature date powermenu
+modules-center = spotify
+modules-right = filesystem xbacklight pulseaudio-control xkeyboard eth wlan cpu memory date powermenu
 
 tray-position = none
 tray-padding = 40
-;tray-background = #0063ff
 
 wm-restack = i3
 
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 top = true
 
@@ -98,7 +95,7 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-foreground = #fff
-label-focused-background = #0e7dc2
+label-focused-background = #2a51bd
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
@@ -130,17 +127,14 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = "  "
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
-format-background = #074369
+format-background = #00577d
 
-label-layout = %layout%
+label-layout = "KL : %layout%"
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-padding = 1
-
-
-
 
 [module/filesystem]
 type = internal/fs
@@ -152,29 +146,22 @@ label-mounted = " %{F#fff}%mountpoint%%{F-}: %percentage_used%% "
 label-unmounted = %mountpoint% is not mounted.
 
 format-prefix = " "
-format-mounted-background = #095280
+format-mounted-background = #0070a1
 format-unmounted-foreground = ${colors.foreground-alt}
 
 label-padding = 1
 
-[module/mpd]
-type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
-
-host = 0.0.0.0
-port = 8000
-password = anokiyft2049
-
-icon-next = ↪
-icon-stop = ⏹
-icon-play = ▶
-icon-pause = ⏸
-icon-prev = ↩ 
-
-label-song-maxlen = 25
-label-song-ellipsis = true
-
-label-padding = 1
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = python3 ~/.config/polybar/spotify.py
+format-underline = #1db954
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous 
 
 
 
@@ -186,7 +173,7 @@ interval = 1
 format-prefix = " "
 format-foreground = #ffffff
 
-format-background = #063959
+format-background = #004b6e
 format-warn-background = #ff0000
 
 label-padding = 1
@@ -200,7 +187,7 @@ interval = 1
 format-prefix = " "
 format-foreground = #ffffff
 
-format-background = #05304a
+format-background = #004463
 format-warn-foreground = #ff0000
 
 label-padding = 1
@@ -242,15 +229,15 @@ interface = enp4s0
 interval = 3.0
 
 format = <label>
-format-connected-background = #074063
+format-connected-background = #004f70
 format-connected-prefix = " "
 format-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 format-disconnected-background = #ff0000
 format-padding = 2
 
-label-connected = "Connected! "
-label-disconnected = "Disconnected!"
+label-connected = " Eth : ON "
+label-disconnected = "Eth : OFF "
 
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
@@ -341,7 +328,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 [module/pulseaudio-control]
 type = custom/script
 tail = true
-format-background = #074b75
+format-background = #00608a
 label-padding = 1
 label-foreground = ${colors.foreground}
 
@@ -349,12 +336,12 @@ label-foreground = ${colors.foreground}
 # You can copy-paste your options for each possible action, which is more
 # trouble-free but repetitive, or apply only the relevant ones (for example
 # --sink-blacklist is only needed for next-sink).
-exec = pulseaudio-control --icons-volume " , " --icon-muted " " --sink-nicknames-from "device.description" --sink-nickname "alsa_output.pci-0000_00_1b.0.analog-stereo:  Speakers" --sink-nickname "alsa_output.usb-Kingston_HyperX_Virtual_Surround_Sound_00000000-00.analog-stereo:  Headphones" listen
+exec = pulseaudio-control --icons-volume " , " --icon-muted " " listen
 click-right = exec pavucontrol &
 click-left = pulseaudio-control togmute
 click-middle = pulseaudio-control --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
 scroll-up = pulseaudio-control --volume-max 130 up
-scroll-down = pulseaudio-control --volume-max 130 down[module/battery]
+scroll-down = pulseaudio-control --volume-max 130 down
 
 
 
@@ -397,9 +384,9 @@ type = custom/menu
 
 expand-right = true
 
-format-background = #021724
+format-background = #003247
 
-label-open = " ⏻ Power "
+label-open = " ⏻ "
 label-open-foreground = #ffffff
 label-close = " cancel "
 label-close-foreground = ${colors.secondary}
@@ -455,16 +442,16 @@ card = intel_backlight
 type = internal/date
 interval = 5
 
-date = "%d-%m-%Y"
+date = "%d-%m-%Y "
 
-time = %H:%M
-time-alt = %H:%M:%S
+time = "%H:%M"
+time-alt = "%H:%M"
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-background = #041f30
+format-background = #00405e
 
-label = "%date% %time%"
+label = "%date%%time%"
 label-padding = 1
 
 
