@@ -12,63 +12,31 @@
 " PLUGINS :
 
 
-" Plug Plugin Manager.
 call plug#begin('~/.vim/plugged')
-
-
-"" Tools and stuff :
 
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
-
 Plug 'ap/vim-css-color'
-Plug 'jiangmiao/auto-pairs'
 Plug 'romgrk/barbar.nvim'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-
-"" Interface :
-
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'akinsho/toggleterm.nvim'
-
-
-
-" Themes :
-
-
-""" General :
-
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
 Plug 'tomasr/molokai'
+Plug 'tomasiser/vim-code-dark'
 Plug 'arcticicestudio/nord-vim'
-
-
-""" Bottom bar :
-
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-
-""" Icons :
-
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
-
-
-"" Others :
-
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
-
 
 call plug#end()
 
@@ -131,10 +99,10 @@ set scrolloff=10
 set shell=zsh
 
 " Colorscheme.
-colorscheme nord
+colorscheme codedark
 
 " Airline theme.
-let g:airline_theme='nord'
+let g:airline_theme='codedark'
 
 " Enable powerline and powerlevel10k for AirLine.
 let g:airline_powerline_fonts = 1
@@ -206,6 +174,7 @@ endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
+
 " NERDTree setup .
 
 
@@ -213,8 +182,7 @@ let NERDTreeShowHidden=1
 
 " Exit Vim if NERDTree is the only window left - By Genzyy .
 
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "Changing default NERDTree arrow characters.
 
@@ -287,6 +255,9 @@ nmap <leader>do <Plug>(coc-codeaction)
 
 nmap <leader>rn <Plug>(coc-rename)
 
+" ToggleTerm
+
+nnoremap <F6> :ToggleTerm<CR>
 
 " END.
 
