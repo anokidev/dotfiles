@@ -1,0 +1,24 @@
+[core]
+
+modules = indicator, layout, cpu, memory, nic, disk, pasink, pasource, time, date, system
+theme = nord-powerline
+
+[module-parameters]
+
+indicator.include = numlock, capslock, scrolllock 
+
+time.format = %H:%M
+date.format = %a, %d %b %Y
+memory.format = {percent:05.02f}%
+disk.format = {percent:05.02f}%
+nic.format = {intf} {state}
+
+cpu.left-click = gnome-system-monitor -r
+memory.left-click = gnome-system-monitor -r
+disk.left-click = gnome-system-monitor -f
+nic.left-click = gnome-system-monitor -r
+
+pasink.right-click = pavucontrol
+pasource.right-click = pavucontrol
+
+system.switch_user = i3exit logout
