@@ -85,7 +85,14 @@ bar {
 		tray_output none
     position top
 		font pango:SourceCodePro 10
-	  status_command bumblebee-status 
+	  status_command bumblebee-status
+
+		colors {
+				background #3B4252
+				focused_workspace #7B8394 #7B8394 #f2f5f0
+				urgent_workspace #BF616A #BF616A #f2f5f0
+				inactive_workspace #3B4252 #3B4252 #f2f5f0 
+		}
 }
 
 ## WINDOW KEYBINDINGS:
