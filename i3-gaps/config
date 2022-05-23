@@ -33,6 +33,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # Execute picom.
 exec_always --no-startup-id exec picom
 
+exec_always --no-startup-id exec ~/.config/polybar/launch.sh
+
 # Run Feh for wallpaper.
 exec_always --no-startup-id exec zsh $HOME/.fehbg
 
@@ -63,7 +65,7 @@ bindsym $mod+Return exec alacritty
 # Starts dmenu.
 bindsym $mod+z exec dmenu_run -b -i -p Search: -nb '#000000' -nf '#1388d1' -sb '#1388d1' -sf '#000000'
 
-# Starts firefox.
+# Starts chrome.
 bindsym $mod+x exec google-chrome-stable
 
 # Starts Thunar.
@@ -84,8 +86,9 @@ bindsym $mod+b exec flameshot gui
 bar {
 		tray_output none
     position top
-		font pango:SourceCodePro 10
+		font pango:SourceCodePro 9
 	  status_command bumblebee-status
+		height 25
 
 		colors {
 				background #3B4252
