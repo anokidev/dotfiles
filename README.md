@@ -78,7 +78,7 @@ This contains all the script file and config file that I use to configure the ap
 - System : Matcha Dark Azul [GTK 2/3] .
 - NeoVim : Nord .
 - Emacs : Doom-One .
-- VS Code : Developer's Theme (General [Firefox Dark] + Product Icon + File Icon).
+- VS Code : One Dark Pro Darker.
 - Mousepad : Oblivion .
 - Bash : Default Manjaro .
 - ZSH : Spaceship Prompt .
@@ -88,6 +88,7 @@ This contains all the script file and config file that I use to configure the ap
 - System : ePapirus Dark [GTK 2/3] .
 - NeoVim : vim-devicons.
 - Emacs : Doom Emacs default icons.
+- VS Code : Developer's Icon Theme (Product and File Icon theme).
 
 ---------------------------------------
 
