@@ -63,7 +63,7 @@ This contains all the script file and config file that I use to configure the ap
 
 #### Editor :
 
-- Editor : Emacs (Main) | Neovim (Simple Editing) | Nano (Emergency) .
+- Editor : VS Code (Main) | Neovim (Simple Editing) | Nano (Emergency) .
 - Extensions Manager : Neovim - vim-plug | Emacs - Doom Emacs .
 - Auto - Completion : NeoVim - COC + auto-pairs | Emacs - A lot of plugins .
 
