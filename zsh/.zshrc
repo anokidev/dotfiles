@@ -24,8 +24,7 @@ plugins=(
 # ORDER :
 SPACESHIP_PROMPT_ORDER=(
   user
-	host
-  time     
+  host     
   dir
   git
   node
@@ -44,7 +43,7 @@ SPACESHIP_PROMPT_ADD_NEWLINE=true
 
 # USER :
 SPACESHIP_USER_PREFIX=""
-SPACESHIP_USER_SUFFIX=" at "
+SPACESHIP_USER_SUFFIX="@"
 SPACESHIP_USER_SHOW=always
 SPACESHIP_USER_COLOR="blue"
 
@@ -54,14 +53,14 @@ SPACESHIP_CHAR_COLOR_SUCCESS="green"
 
 # HOST :
 SPACESHIP_HOST_PREFIX=""
-SPACESHIP_HOST_SUFFIX=" "
+SPACESHIP_HOST_SUFFIX=""
 SPACESHIP_HOST_SHOW=always
 SPACESHIP_HOST_SHOW_FULL=always
 SPACESHIP_HOST_COLOR="green"
 
 # DIR :
-SPACESHIP_DIR_PREFIX='| '
-SPACESHIP_DIR_SUFFIX=' | '
+SPACESHIP_DIR_PREFIX=' '
+SPACESHIP_DIR_SUFFIX=' '
 
 # TIME :
 SPACESHIP_TIME_SHOW=true
@@ -117,9 +116,8 @@ echo ""
 
 uname -a | lolcat
 
-echo ""
+# Alias
 
-neofetch | lolcat
-
-
-
+count_lines() {
+		find . -name '*.'"$1"'' | xargs wc -l | sort -nr
+};
