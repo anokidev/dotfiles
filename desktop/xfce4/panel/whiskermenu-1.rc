@@ -1,5 +1,5 @@
 favorites=google-chrome.desktop,code_code.desktop,freeoffice-textmaker.desktop,freeoffice-planmaker.desktop,freeoffice-presentations.desktop,com.obsproject.Studio.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop,xfce-settings-manager.desktop
-recent=xterm.desktop,uxterm.desktop,nestopia.desktop,htop.desktop,xfce4-sensors.desktop,virt-manager.desktop,cpu-x.desktop,manjaro-hello.desktop,gcolor2.desktop,wine-Programs-Python 3.8-IDLE (Python 3.8 64-bit).desktop
+recent=xfce-ui-settings.desktop,snes9x-gtk.desktop,xterm.desktop,uxterm.desktop,nestopia.desktop,htop.desktop,xfce4-sensors.desktop,virt-manager.desktop,cpu-x.desktop,manjaro-hello.desktop
 button-icon=distributor-logo-manjaro
 button-single-row=false
 show-button-title=false
