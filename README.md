@@ -4,19 +4,32 @@
 
 </div>
 
+<hr>
+
 <div style="display : flex ; justify-content : center" align="center">
 
 ![Showcase-1](/showcases/1.png)
+
+<hr>
+
 ![Showcase-2](/showcases/2.png)
+
+<hr>
+
 ![Showcase-3](/showcases/3.png)
+
+<hr>
+
 ![Showcase-4](/showcases/4.png)
 
 
 </div>
 
----------------------------------------
+<hr>
 
 This is my setup, most of them are FOSS softwares.
+
+---------------------------------------
 
 ## NOTES :
 
