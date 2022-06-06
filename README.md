@@ -4,7 +4,7 @@
 
 </div>
 
-<hr>
+---------------------------------------
 
 <div style="display : flex ; justify-content : center" align="center">
 
@@ -26,6 +26,10 @@
 </div>
 
 This is my setup, most of them are FOSS softwares.
+
+---------------------------------------
+
+This part explains my dotfiles.
 
 ## NOTES :
 
