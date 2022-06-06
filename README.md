@@ -64,8 +64,8 @@ This contains all the script file and config file that I use to configure the ap
 #### Setup :
 
 - OS : Manjaro Linux| Microsoft Windows 7 Ultimate .
-- Shell : Windows - Batch | Manjaro : ZSH and Bash.
-- GUI : Windows Shell | X11 + i3-gaps + Bumblebee Status .
+- Shell : Windows - Batch | Manjaro : ZSH + Spaceship Prompt.
+- GUI : Windows Shell | X11 + xfce4 .
 
 #### Tools :
 
