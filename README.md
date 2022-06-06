@@ -25,11 +25,7 @@
 
 </div>
 
-<hr>
-
 This is my setup, most of them are FOSS softwares.
-
----------------------------------------
 
 ## NOTES :
 
@@ -43,8 +39,6 @@ zsh-syntax-highlighting, and zsh-auto-suggestions are required.
 
 For wallpaper, click [here](https://www.peakpx.com/en/hd-wallpaper-desktop-vpsqb).
 For music used for cava, click [here](https://www.youtube.com/watch?v=SKricIeeru0).
-
----------------------------------------
 
 ## SPECS :
 
