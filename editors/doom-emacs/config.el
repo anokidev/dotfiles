@@ -82,9 +82,24 @@
 		doom-big-font (font-spec :family "MesloLGS NF" :size 15 :weight 'bold)
 )
 
+;; Set theme.
 (setq doom-theme 'doom-vibrant)
 
-(setq dashboard-banner-logo-title "Emacs: Programming, redefined.")
-(setq dashboard-footer-messages '("Welcome back, happy coding!"))
+;; Enable toolbar.
+(after! core-ui (menu-bar-mode 1))
 
+;; Enable centaur tabs while working on a projectile project.
 (after! centaur-tabs (centaur-tabs-group-by-projectile-project))
+
+;; Enable scroll bar.
+(after! core-ui (scroll-bar-mode 1))
+(after! core-ui (horizontal-scroll-bar-mode 1))
+
+;; Enable toolbar.
+(after! core-ui (tool-bar-mode 1))
+
+;; Custom splash screen.
+(setq fancy-splash-image "~/.doom.d/logo.png")
+
+;; Enable autosave.
+(setq auto-save-default t)

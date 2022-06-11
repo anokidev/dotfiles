@@ -50,3 +50,4 @@
 ;(unpin! t)
 
 (package! vscode-dark-plus-theme)
+(package! powershell)
