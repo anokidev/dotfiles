@@ -32,7 +32,6 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq load-theme 'vscode-dark-plus)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -77,8 +76,15 @@
 
 ;; Set font.
 (
-    setq doom-font (font-spec :family "MesloLGS NF" :size 21 :weight 'semi-light)
-    doom-variable-pitch-font (font-spec :family "MesloLGS NF" :size 21 :weight 'semi-light)
-    doom-unicode-font (font-spec :family "MesloLGS NF" :size 21 :weight 'semi-light )
-		doom-big-font (font-spec :family "MesloLGS NF" :size 21 :weight 'semi-light)
+    setq doom-font (font-spec :family "MesloLGS NF" :size 15 :weight 'semi-light)
+    doom-variable-pitch-font (font-spec :family "MesloLGS NF" :size 15 :weight 'semi-light)
+    doom-unicode-font (font-spec :family "MesloLGS NF" :size 15 :weight 'semi-light )
+		doom-big-font (font-spec :family "MesloLGS NF" :size 15 :weight 'bold)
 )
+
+(setq doom-theme 'doom-vibrant)
+
+(setq dashboard-banner-logo-title "Emacs: Programming, redefined.")
+(setq dashboard-footer-messages '("Welcome back, happy coding!"))
+
+(after! centaur-tabs (centaur-tabs-group-by-projectile-project))
