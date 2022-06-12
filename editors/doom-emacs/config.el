@@ -102,9 +102,5 @@
 ;; Enable autosave.
 (setq auto-save-default t)
 
-;; Enable minimap.
-(minimap-mode 1)
-(setq minimap-window-location 'right)
-(setq minimap-width-fraction 0.0)
-(setq minimap-minimum-width 10)
-(minimap-create)
+;; Start minimap.
+(minimap-mode)
