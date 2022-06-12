@@ -95,9 +95,6 @@
 (after! core-ui (scroll-bar-mode 1))
 (after! core-ui (horizontal-scroll-bar-mode 1))
 
-;; Enable toolbar.
-(after! core-ui (tool-bar-mode 1))
-
 ;; Custom splash screen.
 (setq fancy-splash-image "~/.doom.d/logo.png")
 
