@@ -51,3 +51,6 @@
 
 (package! vscode-dark-plus-theme)
 (package! powershell)
+(package! mlscroll)
+
+(package! minimap)

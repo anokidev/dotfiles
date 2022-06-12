@@ -92,11 +92,19 @@
 (after! centaur-tabs (centaur-tabs-group-by-projectile-project))
 
 ;; Enable scroll bar.
+(mlscroll-mode 1)
 (after! core-ui (scroll-bar-mode 1))
-(after! core-ui (horizontal-scroll-bar-mode 1))
+(setq horizontal-scroll-bar-mode t)
 
 ;; Custom splash screen.
 (setq fancy-splash-image "~/.doom.d/logo.png")
 
 ;; Enable autosave.
 (setq auto-save-default t)
+
+;; Enable minimap.
+(minimap-mode 1)
+(setq minimap-window-location 'right)
+(setq minimap-width-fraction 0.0)
+(setq minimap-minimum-width 10)
+(minimap-create)
