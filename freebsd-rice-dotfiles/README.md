@@ -4,10 +4,10 @@
 
 <hr>
 
-![1](/showcases/1.png)
-![2](/showcases/2.png)
-![3](/showcases/3.png)
-![4](/showcases/4.png)
+![1](./showcases/1.png)
+![2](./showcases/2.png)
+![3](./showcases/3.png)
+![4](./showcases/4.png)
 
 </div>
 
