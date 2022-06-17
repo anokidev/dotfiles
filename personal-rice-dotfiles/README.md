@@ -8,23 +8,23 @@
 
 <div style="display : flex ; justify-content : center" align="center">
 
-![Showcase-1](/showcases/1.png)
+![Showcase-1](./showcases/1.png)
 
 <hr>
 
-![Showcase-2](/showcases/2.png)
+![Showcase-2](./showcases/2.png)
 
 <hr>
 
-![Showcase-3](/showcases/3.png)
+![Showcase-3](./showcases/3.png)
 
 <hr>
 
-![Showcase-4](/showcases/4.png)
+![Showcase-4](./showcases/4.png)
 
 <hr>
 
-![Showcase-4](/showcases/5.png)
+![Showcase-4](./showcases/5.png)
 
 </div>
 
