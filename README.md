@@ -1,7 +1,8 @@
 <div style="display: flex; justify-content: center;" align="center">
 		<h1>Dotfiles</h1>
-		<img src="./personal-rice-dotfiles/showcases/3.png"/>
+		<img src="./personal-rice-dotfiles/showcases/4.png"/>
 		<img src="./freebsd-rice-dotfiles/showcases/1.png"/>
+		<img src="./personal-rice-dotfiles/showcases/3.png"/>
 		<img src="./personal-rice-dotfiles/showcases/1.png"/>
 		<img src="./freebsd-rice-dotfiles/showcases/3.png/">
 </div>
