@@ -6,6 +6,8 @@
 		<img src="./freebsd-rice-dotfiles/showcases/3.png/">
 </div>
 
+## About:
+
 This is used to store all my dotfiles.
 Licensed in MIT License.
 
