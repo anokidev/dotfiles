@@ -23,7 +23,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'akinsho/toggleterm.nvim'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'navarasu/onedark.nvim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
@@ -74,9 +74,6 @@ set mouse=a
 " Auto indent.
 set autoindent
 
-" Background dark #1 . Light theme people == aliens.
-set background=dark
-
 " No backuping.
 set nobackup
 
@@ -99,13 +96,21 @@ set scrolloff=10
 set shell=zsh
 
 " Colorscheme.
-colorscheme codedark
+let g:gruvbox_italic=1
+
+autocmd vimenter * ++nested colorscheme gruvbox
+
+" Background dark #1 . Light theme people == aliens.
+set background=dark
 
 " Airline theme.
-let g:airline_theme='codedark'
+let g:airline_theme='gruvbox'
 
 " Enable powerline and powerlevel10k for AirLine.
 let g:airline_powerline_fonts = 1
+
+" Force syntax mode for certain types.
+autocmd BufNewFile,BufRead *.duitml set filetype=txt
 
 " GUI config.
 hi Normal guibg=none

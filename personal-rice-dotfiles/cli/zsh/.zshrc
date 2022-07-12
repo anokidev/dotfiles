@@ -49,7 +49,7 @@ SPACESHIP_PROMPT_ADD_NEWLINE=true
 SPACESHIP_USER_PREFIX=""
 SPACESHIP_USER_SUFFIX="@"
 SPACESHIP_USER_SHOW=always
-SPACESHIP_USER_COLOR="blue"
+SPACESHIP_USER_COLOR="yellow"
 
 # CHAR :
 SPACESHIP_CHAR_SYMBOL="> "
@@ -66,7 +66,8 @@ SPACESHIP_HOST_COLOR="green"
 
 # DIR :
 SPACESHIP_DIR_PREFIX=' '
-SPACESHIP_DIR_SUFFIX=' '
+SPACESHIP_DIR_SUFFIX=' - '
+SPACESHIP_DIR_COLOR="yellow"
 
 # TIME :
 SPACESHIP_TIME_SHOW=true
@@ -115,12 +116,14 @@ SPACESHIP_PYENV_SYMBOL=""
 
 source $ZSH/oh-my-zsh.sh
 
-# Colorscript.
-colorscript -e six | lolcat
+# Set the color variable
+yellow='\033[1;33m'
+# Clear the color after that
+clear='\033[0m'
 
+colorscript -e six
 echo ""
-
-uname -a | lolcat
+echo -e "${yellow}$(uname -a)${clear}"
 
 # Alias
 

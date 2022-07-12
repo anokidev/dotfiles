@@ -1,1 +1,0 @@
-For flameshot screenshooter.
