@@ -29,6 +29,7 @@ Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
 Plug 'tomasr/molokai'
 Plug 'tomasiser/vim-code-dark'
+Plug 'projekt0n/github-nvim-theme'
 Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -95,16 +96,13 @@ set scrolloff=10
 " Im using ZSH.
 set shell=zsh
 
-" Colorscheme.
-let g:gruvbox_italic=1
-
-autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme github_dark
 
 " Background dark #1 . Light theme people == aliens.
 set background=dark
 
 " Airline theme.
-let g:airline_theme='gruvbox'
+let g:airline_theme='github_dark'
 
 " Enable powerline and powerlevel10k for AirLine.
 let g:airline_powerline_fonts = 1
