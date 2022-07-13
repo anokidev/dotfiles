@@ -117,7 +117,7 @@ SPACESHIP_PYENV_SYMBOL=""
 source $ZSH/oh-my-zsh.sh
 
 # Set the color variable
-yellow='\033[1;34m'
+yellow='\033[1;33m'
 # Clear the color after that
 clear='\033[0m'
 
