@@ -76,18 +76,18 @@ This contains all the script file and config file that I use to configure the ap
 
 #### Themes :
 
-- System : Gruvbox Dark BL [GTK 2/3].
-- NeoVim : Gruvbox Dark.
-- VS Code : Gruvbox Dark Hard.
+- System : matcha-dark-azul [GTK 2/3].
+- NeoVim : github-nvim-theme.
+- VS Code : Github Dark.
 - Mousepad : Oblivion.
 - Bash : Default Manjaro.
 - ZSH : Spaceship Prompt.
 
 #### Icons :
 
-- System : Gruvbox Icon [GTK 2/3].
+- System : Papirus-Dark [GTK 2/3].
 - NeoVim : vim-devicons.
-- VS Code : Developer's Icon Theme (Product and File Icon theme).
+- VS Code : Developer's Icon Theme (Product icon theme) | VSCode Icons (File icon theme).
 
 ---------------------------------------
 
