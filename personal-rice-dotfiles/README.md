@@ -38,7 +38,7 @@ This part explains my dotfiles.
 
 Note that i3-gaps config is written to interact with Polybar. Note that MesloLGS NF font is required. oh-my-zsh, Spaceship Prompt theme, zsh-syntax-highlighting, and zsh-auto-suggestions are required.
 
-For wallpaper, click [here](https://wallpaperaccess.com/gruvbox#google_vignette).
+For wallpaper, click [here](https://imgur.com/gallery/ZE9ZvL4).
 For music used for cava, click [here](https://topazzz.bandcamp.com/album/half-awake-ep).
 
 ## SPECS :
