@@ -1,4 +1,4 @@
-<div style="display : flex ; justify-content : center ;" align="center">
+<div style="display : flex ; justify-content : center;  flex-direction: column;" align="center">
 
 <h1>My FreeBSD Rice Dotfiles</h1>
 

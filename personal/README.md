@@ -6,7 +6,7 @@
 
 ---------------------------------------
 
-<div style="display : flex ; justify-content : center" align="center">
+<div style="display : flex ; justify-content : center; flex-direction: column;" align="center">
 
 ![Showcase-1](./showcases/1.png)
 
