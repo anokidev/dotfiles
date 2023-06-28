@@ -1,7 +1,7 @@
 <div style="display: flex; justify-content: center; flex-direction: column;" align="center">
 		<h1>Dotfiles</h1>
 		<img src="./archlinux/showcases/1.png"/>
-		<img src="./archlinux/showcases/2.png"/>
+		<img src="./archlinux/showcases/4.png"/>
 		<img src="./freebsd/showcases/3.png"/>
 		<img src="./freebsd/showcases/4.png"/>
 </div>
