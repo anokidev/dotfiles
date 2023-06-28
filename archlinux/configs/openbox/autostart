@@ -1,0 +1,5 @@
+~/.config/polybar/launch.sh &
+tint2 &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+feh --bg-fill ~/Pictures/wallpaper.jpg
+picom &

@@ -1,0 +1,157 @@
+#### Background Preset ####
+
+# ID 1 (Panels)
+rounded = 6
+border_width = 2
+background_color = #2e2e2e 100
+background_color_hover = #2e2e2e 100
+
+# ID 2 (Launcher - General)
+rounded = 0
+border_width = 0
+background_color = #2e2e2e 100
+background_color_hover = #2e2e2e 100
+
+# ID 3 (Launcher - Apps)
+rounded = 6
+border_width = 0
+background_color = #2e2e2e 100
+background_color_hover = #ffffff 50
+
+# ID 4 (Taskbar)
+rounded = 0
+border_width = 0
+background_color = #2e2e2e 100
+background_color_hover = #2e2e2e 100
+
+# ID 5 (Task - Default)
+rounded = 6
+border_width = 0
+background_color = #2e2e2e 100
+background_color_hover = #949494 80
+
+# ID 6 (Task - Active)
+rounded = 6
+border_width = 0
+background_color = #949494 100
+background_color_hover = #ffffff 80
+
+# ID 7 (Task - Urgent)
+rounded = 6
+border_width = 0
+background_color = #ff7300 80
+background_color_hover = #ffffff 80
+
+# ID 8 (Tooltip)
+rounded = 6
+border_width = 0
+background_color = #2e2e2e 100
+background_color_hover = #2e2e2e 100
+
+#### Panels ####
+
+# ID
+panel_background_id = 1
+
+# Position
+panel_monitor = all
+panel_position = bottom center horizontal
+
+# Appearance
+panel_size = 100% 4.5%
+panel_margin = 5 10
+panel_padding = 4 0
+
+# Contents
+panel_items = L:T
+font_shadow = 0
+
+# Behaviour
+panel_shrink = 0
+wm_menu = 1
+panel_dock = 0
+panel_layer = top
+panel_window_name = "tint2-taskbar"
+disable_transparency = 0
+strut_policy = follow_size
+
+#### Launcher ####
+
+# ID
+launcher_background_id = 2
+launcher_icon_background_id = 3
+
+# Padding
+launcher_padding = 2 3 2
+
+# Icons
+launcher_icon_size = 40
+launcher_icon_theme = Papirus
+
+# Behaviour
+launcher_tooltip = 1
+
+# Apps
+launcher_item_app = xfce4-appfinder.desktop
+launcher_item_app = obconf.desktop
+launcher_item_app = lxappearance.desktop
+launcher_item_app = thunar.desktop
+launcher_item_app = vlc.desktop
+launcher_item_app = Alacritty.desktop
+launcher_item_app = code.desktop
+launcher_item_app = com.spotify.Client.desktop
+launcher_item_app = firefox.desktop
+
+#### Taskbar - Default ####
+
+# ID
+taskbar_background_id = 4
+taskbar_active_background_id = 4
+
+# Appearance
+taskbar_padding = 2 3 2
+
+# Content
+task_align = right
+
+# Behaviour
+taskbar_sort_order = none
+
+#### Taskbar - Task ####
+
+# ID
+task_background_id = 5
+task_active_background_id = 6
+task_urgent_background_id = 7
+
+# Appearance
+task_padding = 2 3 2
+task_maximum_size = 135 40
+
+# Content
+task_centered = 0
+task_thumbnail_size = 400
+
+task_font = MesloLGS NF Regular 8
+
+# Behaviour
+task_thumbnail = 1
+task_tooltip = 1
+urgent_nb_of_blink = 20
+
+#### Taskbar - Tooltip ####
+
+# ID
+tooltip_background_id = 8
+
+# Appearance
+tooltip_padding = 2 2
+tooltip_font = MesloLGS NF Regular 8
+
+#### Separator ####
+separator = new
+separator_color = #6b6b6b
+separator_style = line
+separator_padding = 2 0
+separator_size = 1
+

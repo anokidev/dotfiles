@@ -1,0 +1,3 @@
+# Vim
+
+Mostly default configs.

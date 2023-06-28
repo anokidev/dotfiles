@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Main XML -->
+<openbox_menu>
+	<!-- ROOT MENU -->
+    <menu id="root-menu" label="OpenBox 3">
+    
+		<!-- HEADER -->
+		<separator label="OpenBox Menu"/>
+
+        <!-- ::::::::::::: SEARCH ::::::::::::: -->
+    	
+		<!-- Search App -->
+		<item 
+    		label="Search Apps..." 
+    		icon="/usr/share/icons/Papirus-Dark/48x48/apps/xfce4-appfinder.svg"
+        > 
+			<action name="Execute">
+				<execute>xfce4-appfinder</execute>
+            </action> 
+        </item>
+
+        <!-- ::::::::::::: ACCESSORIES ::::::::::::: -->
+        
+        <!-- Accessories Section -->
+        <separator label="Applications and Accessories"/>
+        
+        <!-- Internet Apps -->
+        <menu 
+    		id="1" 
+    		label="Internet and Streaming" 
+    		icon="/usr/share/icons/Papirus-Dark/48x48/apps/internet-web-browser.svg"
+        >
+			  <!-- Mozilla Firefox -->
+			<item 
+				label="Mozilla Firefox" 
+				icon="/usr/share/icons/Papirus-Dark/48x48/apps/mozilla-firefox.svg"
+			> 
+				<action name="Execute">
+					<execute>firefox</execute>
+				</action>
+	        </item>
+		    <item
+		        label="Spotify Client"
+						icon="/usr/share/icons/Papirus-Dark/48x48/apps/spotify-client.svg"
+		    >
+		        <action name="Execute">
+		            <execute>flatpak run com.spotify.Client</execute>
+		        </action>
+            </item>
+        </menu>
+
+        <!-- Multimedia Apps -->
+        <menu 
+	    	id="2" 
+            label="Multimedia Applications" 
+            icon="/usr/share/icons/Papirus-Dark/48x48/apps/video-player.svg"
+        >
+	    	<!-- VLC -->
+            <item 
+	    		label="VLC Media Player" 
+            	icon="/usr/share/icons/Papirus-Dark/48x48/apps/vlc.svg"
+            >
+            	<action name="Execute">
+                    <execute>vlc</execute>
+                </action>
+            </item>
+            <!-- QT V4L2 TEST -->
+            <item 
+	    		label="Qt V4L2 test Utility" 
+                icon="/usr/share/icons/Papirus-Dark/48x48/apps/qv4l2.svg"
+            > 
+                <action name="Execute">
+	    			<execute>qv4l2</execute>
+                </action>
+	    	</item>
+            <!-- QT V4L VIDEO CAPTURE -->
+            <item 
+                label="Qt V4L2 video capture utility" 
+                icon="/usr/share/icons/Papirus-Dark/48x48/apps/qvidcap.svg"
+            > 
+                <action name="Execute">
+	    			<execute>qvidcap</execute>
+                </action>
+            </item>
+        </menu>
+
+        <!-- Programming Apps -->
+        <menu 
+	    	id="3" 
+            label="Editor and Development" 
+            icon="/usr/share/icons/Papirus-Dark/48x48/apps/notepad.svg"
+	    >
+	    	<!-- VS Code -->
+	    	<item
+	    		label="Visual Studio Code"
+	    		icon="/usr/share/icons/visual-studio-code.png"
+	    	>
+	    		<action name="Execute">
+	    			<execute>code</execute>
+	    		</action>
+	    	</item>
+            <!-- Emacs -->
+            <item 
+            	label="GNU Emacs" 
+            	icon="/usr/share/icons/Papirus-Dark/48x48/apps/emacs.svg"
+            > 
+            	<action name="Execute">
+                   	<execute>xterm -e emacs</execute>
+                </action>
+            </item>
+            <!-- Gedit -->
+            <item 
+                label="Gedit Editor" 
+                icon="/usr/share/icons/Papirus-Dark/48x48/apps/gedit.svg"
+            > 
+                <action name="Execute">
+	    			<execute>gedit</execute>
+                </action> 
+            </item>
+            <!-- IDLE -->
+            <item 
+                label="IDLE (Python IDE)" 
+                icon="/usr/share/icons/Papirus-Dark/48x48/apps/idle3.svg"
+            > 
+                <action name="Execute">
+	    			<execute>idle</execute>
+                </action>
+            </item>
+        </menu>
+
+        <!-- ::::::::::::: SYSTEM ::::::::::::: -->
+
+        <!-- System Section -->
+        <separator label="System Utilities"/>
+
+        <!-- Terminal -->
+        <menu 
+            id="5" 
+            label="Terminal Emulators" 
+            icon="/usr/share/icons/Papirus-Dark/48x48/apps/terminal.svg"
+        >
+            <!-- Alacritty -->
+            <item label="Alacritty" icon="/usr/share/pixmaps/Alacritty.svg"> 
+                <action name="Execute">
+	    			<execute>alacritty</execute>
+                </action> 
+            </item>
+            <!-- Xterm -->
+            <item label="Xterm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm"> 
+                <action name="Execute">
+                    <execute>xterm</execute>
+                </action>
+            </item>
+            <!-- UXterm -->
+            <item label="UXTerm" icon="/usr/share/pixmaps/xterm-color_48x48.xpm"> 
+                <action name="Execute">
+                    <execute>uxterm</execute>
+                </action>
+            </item>
+        </menu>
+
+        <!-- System -->
+        <menu id="6" label="System Apps" icon="/usr/share/pixmaps/archlinux-logo.svg">
+            <!-- Settings -->
+            <menu 
+                id="7" 
+                label="Settings" 
+                icon="/usr/share/icons/Papirus-Dark/48x48/apps/systemsettings.svg"
+            >
+                <!-- Obconf -->
+                <item 
+	    			label="Openbox Configuration Manager" 
+                    icon="/usr/share/pixmaps/obconf.png"
+                > 
+                    <action name="Execute">
+	    				<execute>obconf</execute>
+                    </action>
+                </item>
+                <!-- LxAppearance -->
+                <item 
+                    label="LxAppearance" 
+                    icon="/usr/share/icons/Papirus-Dark/48x48/apps/lxqt.svg"
+                > 			
+                    <action name="Execute">
+                        <execute>lxappearance</execute>
+                    </action>
+                </item>
+						</menu>
+						<!-- Filezilla -->
+						<item
+								label="FileZilla"
+								icon="/usr/share/icons/Papirus-Dark/48x48/apps/filezilla.svg"
+						>
+								<action name="Execute">
+										<execute>filezilla</execute>
+								</action>
+						</item>
+            <!-- Thunar -->
+            <item 
+                label="Thunar File Manager" 
+                icon="/usr/share/icons/Papirus-Dark/48x48/apps/Thunar.svg"
+            > 
+                <action name="Execute">
+                    <execute>thunar</execute>
+                </action>
+            </item>
+	    </menu>
+
+        <!-- ::::::::::::: SESSION ::::::::::::: -->
+
+        <!-- Session Manager -->
+        <separator 
+            label="Session Manager" 
+            icon="/usr/share/icons/Papirus-Dark/48x48/apps/xfce4-appfinder.svg"
+        />
+
+        <!-- Reconfigure OpenBox -->
+        <item label="Reconfigure OpenBox" icon="/usr/share/pixmaps/openbox.png"> 
+            <action name="Reconfigure"/>
+        </item>
+
+        <!-- POWER -->
+        <menu 
+            id="8" 
+            label="Power Menu" 
+            icon="/usr/share/icons/Papirus-Dark/48x48/apps/system-shut-down.svg"
+        >
+            <!-- Shutdown -->
+            <item label="Shutdown" icon="/usr/share/icons/Papirus-Dark/48x48/apps/system-shutdown.svg"> 
+	    					<action name="Execute">
+	    							<execute>systemctl poweroff</execute>
+                </action>
+            </item>
+            <!-- Restart -->
+           	<item label="Restart" icon="/usr/share/icons/Papirus-Dark/48x48/apps/system-reboot.svg"> 
+           			<action name="Execute">
+                    <execute>systemctl reboot</execute>
+                </action>
+            </item>
+            <!-- Logout -->
+            <item label="Logout" icon="/usr/share/icons/Papirus-Dark/48x48/apps/system-log-out.svg"> 
+                <action name="Exit"/>
+            </item>   
+        </menu>
+    </menu>
+</openbox_menu>

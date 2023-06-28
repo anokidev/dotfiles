@@ -13,32 +13,28 @@
 
 ----
 
-Hello there my friend ! This is the dotfiles
-that I used to rice my FreeBSD VM. All of them
-are based on 1 theme, Gruvbox Dark !
+Hello there my friend! This is the dotfiles that I used to rice my FreeBSD VM. All of them are based on 1 theme, Gruvbox Dark.
 
-Click [here](https://www.reddit.com/r/wallpaper/comments/kezpb9/1920x1080_all_resolutions_available_dark_light/) 
-to download the wallpaper.
+## Wallpaper:
 
-----
+Click [here](https://www.reddit.com/r/wallpaper/comments/kezpb9/1920x1080_all_resolutions_available_dark_light/) to download the wallpaper.
 
-- OS : FreeBSD 13.0-RELEASE Patch Level 7 .
-- Shell : ZSH + oh-my-zsh + Spaceship Prompt Theme .
+## Softwares:
 
-----
+Here is the list of softwares that I use:
 
-- WM : i3wm gaps / i3-gaps .
-- Status bar : Polybar .
+| Components               | Softwares                                    | 
+| :----------------------: | :------------------------------------------: |
+| Operating System         | FreeBSD 13.0-RELEASE Patch Level 7           |
+| Shell                    | ZSH + oh-my-zsh + Spaceship Prompt Theme     |
+| Windowing System         | Xorg                                         |
+| Window Manager           | i3-gaps                                      |
+| Status Bar               | Polybar                                      |
+| Terminal                 | Alacritty                                    |
+| Multiplexer              | Tmux                                         |
+| Editor                   | Neovim + vim-plug + COC                      |
 
-----
-
-- Terminal : Alacritty .
-- Multiplexer : Tmux .
-- Editor : Neovim + vim-plug + coc.nvim .
-
-----
-
-NOTES :
+**NOTICE:**
 
 - You need ZSH AND oh-my-zsh in order to install the prompt theme.
 - Not only that, you also need [Colorscript](https://gitlab.com/dwt1/shell-color-scripts) for the prompt greeting.
