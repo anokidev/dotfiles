@@ -2,7 +2,7 @@
 		<h1>Dotfiles</h1>
 		<img src="./archlinux/showcases/1.png"/>
 		<img src="./archlinux/showcases/4.png"/>
-		<img src="./freebsd/showcases/3.png"/>
+		<img src="./freebsd/showcases/1.png"/>
 		<img src="./freebsd/showcases/4.png"/>
 </div>
 
