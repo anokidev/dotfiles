@@ -54,7 +54,6 @@ filetype plugin indent on                               " Enable filetype, plugi
 " Behaviour
 set clipboard+=unnamedplus                              " Set clipboard to system clipboard.
 set scrolloff=10                                        " Set scrolloff height to 10 lines.
-set nowrap                                              " Do not wrap text.
 " set nosc noru nosm                                    " Increase notification speed.
 set lazyredraw                                          " Buffer screen updates to increase speed.
 set ignorecase                                          " Ignore case.
